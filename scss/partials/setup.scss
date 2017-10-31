@@ -1,0 +1,25 @@
+body {
+  font-family: "Fira Sans", sans-serif;
+  margin: 0;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.wrapper {
+  max-width: 1400px;
+  width: 80%;
+  margin: 0 auto;
+}
+@media (max-width: 1025px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .wrapper {
+    width: 95%;
+  }
+}
