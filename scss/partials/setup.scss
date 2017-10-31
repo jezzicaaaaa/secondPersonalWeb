@@ -8,6 +8,18 @@ ul li {
 a {
   text-decoration: none;
 }
+h2 {
+  display: inline-block;
+  font-size: 3rem;
+  letter-spacing: 5px;
+  background: linear-gradient(to right, #d6ba8d, #ae8658);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  position: relative;
+  clip: auto;
+  text-transform: uppercase;
+}
 .wrapper {
   max-width: 1400px;
   width: 80%;
