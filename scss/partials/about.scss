@@ -1,5 +1,14 @@
 .about {
-  color: #fff;
-  background-color: rgba(183, 217, 216, 1);
-  padding: 50px 0;
+    color: #303030;
+    background-color: rgba(183, 217, 216, 1);
+    padding: 60px 0;
+    height: 60vh;
+    .content {
+        width: 80%;
+    }
+    p {
+        line-height: 3rem;
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
 }
