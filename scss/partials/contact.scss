@@ -11,7 +11,7 @@
   p {
     display: block;
     padding-bottom: 10px;
-    margin: 00;
+    margin: 0;
   }
   .email {
     color: #fff;
@@ -30,5 +30,12 @@
   i:hover {
     transition: 0.33s ease-in-out;
     color: #f3f3f3;
+  }
+}
+@media (max-width: 768px) {
+  .contact {
+    .email {
+      font-size: 18px;
+    }
   }
 }

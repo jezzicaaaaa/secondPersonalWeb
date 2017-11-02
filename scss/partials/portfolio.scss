@@ -6,21 +6,27 @@
   text-align: center;
   .portfolio-content {
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+
     .container {
       padding: 25px;
-      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
       margin-bottom: 50px;
-      justify-content: space-around;
+      display: flex;
       .image {
         width: 40%;
         margin: auto;
         transition: 0.3s ease-in-out;
         filter: brightness(50%);
-      }
-      img {
-        width: 100%;
+        img {
+          width: 100%;
+        }
       }
       .description {
+        padding: 20px 0;
+        margin: auto;
         width: 50%;
         h3 {
           margin-top: 5px;
@@ -53,9 +59,9 @@
           border: 3px solid #d6ba8d;
           outline: none;
           background: #d6ba8d;
+          transition: 0.3s ease-in-out;
         }
         a:hover {
-          transition: 0.3s ease-in-out;
           background: transparent;
           color: #d6ba8d;
           border: 3px solid #f3f3f3;
@@ -64,6 +70,9 @@
     }
     .container:hover .image {
       filter: brightness(100%);
+    }
+    .container:nth-child(even) {
+      flex-direction: row-reverse;
     }
   }
 }
@@ -94,6 +103,7 @@
   .portfolio {
     .portfolio-content {
       .container {
+        position: relative;
         display: block;
         text-align: center;
         .image {
@@ -101,9 +111,20 @@
         }
         .description {
           margin: auto;
-          width: 80%;
+          width: 95%;
           margin-top: 25px;
         }
+      }
+      .container:after {
+        position: absolute;
+        content: "";
+        border-bottom: 2px solid #f3f3f3;
+        width: 80%;
+        left: 10%;
+        bottom: 0;
+      }
+      .container:nth-child(4):after {
+        width: 0;
       }
     }
   }

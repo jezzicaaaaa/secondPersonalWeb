@@ -47,3 +47,21 @@
     }
   }
 }
+@media (max-width: 768px) {
+  .skills {
+    .wrapper {
+      .skill-set {
+        figure {
+          width: 25%;
+          margin-left: 10px;
+          i {
+            font-size: 45px;
+          }
+        }
+      }
+      .skill-set:nth-child(3) {
+        margin-top: 0;
+      }
+    }
+  }
+}

@@ -17,8 +17,21 @@
   .about {
     .content {
       p {
-        font-size: 16px;
         line-height: 2.5rem;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .about {
+    height: 70vh;
+
+    .content {
+      width: 100%;
+      p {
+        padding: 0 5px;
+        line-height: 2.2rem;
+        font-size: 14px;
       }
     }
   }

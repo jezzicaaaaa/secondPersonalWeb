@@ -22,10 +22,18 @@
             </button>
             <div class="hamburger-content">
                 <ul>
-                    <li>About</li>
-                    <li>Skills</li>
-                    <li>Porfolio</li>
-                    <li>Contact</li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#skill">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -35,16 +43,16 @@
             <img src="assets/img/myLogo.png" alt="my logo">
             <ul class="main-nav">
                 <li>
-                    <a href="">About</a>
+                    <a href="#about">About</a>
                 </li>
                 <li>
-                    <a href="">Skills</a>
+                    <a href="#skill">Skills</a>
                 </li>
                 <li>
-                    <a href="">Portfolio</a>
+                    <a href="#portfolio">Portfolio</a>
                 </li>
                 <li>
-                    <a href="">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -65,7 +73,7 @@
             </div>
         </div>
     </header>
-    <section class="about">
+    <section class="about" id="about">
         <div class="wrapper">
             <div class="content">
                 <h2>
@@ -78,10 +86,10 @@
             </div>
         </div>
     </section>
-    <section class="skills">
+    <section class="skills" id="skills">
         <div class="wrapper">
-            <h2 class="skill">
-                <span class="numbers">02</span>Skills</h2>
+            <h2 class="skill" id="skill">
+                <span id="number">02</span>Skills</h2>
             <div class="skill-set">
                 <figure>
                     <i class="devicon-html5-plain colored"></i>
@@ -121,24 +129,31 @@
             </div>
         </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="wrapper">
             <h2>
-                <span class="numbers">03</span>Portfolio</h2>
+                <span class="numbers" id="port">03</span>Portfolio</h2>
             <div class="portfolio-content">
                 <div class="container">
                     <div class="image">
-                        <img src="assets/img/project1.png" alt="">
+                        <a href="http://jezzicamae.co/charityTheme/" target="blank">
+                            <img src="assets/img/project1.png" alt="">
+                        </a>
                     </div>
                     <div class="description">
                         <h3>PSD TO HTML</h3>
                         <p>From a PSD design template into a pixel perfect website. It is fully responsive for perfect viewing
                             on different devices.</p>
                         <p class="tools">HTML // CSS // Responsive // jQuery</p>
-                        <a href="http://jezzicamae.co/charityTheme/" role="button"> VIEW LIVE</a>
+                        <a href="http://jezzicamae.co/charityTheme/" target="blank" role="button"> VIEW LIVE</a>
                     </div>
                 </div>
                 <div class="container">
+                    <div class="image">
+                        <a href="http://jezzicamae.co/construction/" target="blank">
+                            <img src="assets/img/project2.png" alt="">
+                        </a>
+                    </div>
                     <div class="description">
                         <h3>PSD TO HTML</h3>
                         <p>From a PSD design template into a pixel perfect website. It is fully responsive for perfect viewing
@@ -146,13 +161,13 @@
                         <p class="tools">HTML // CSS // Responsive // jQuery</p>
                         <a href="http://jezzicamae.co/construction/" role="button"> VIEW LIVE</a>
                     </div>
-                    <div class="image">
-                        <img src="assets/img/project2.png" alt="">
-                    </div>
+
                 </div>
                 <div class="container">
                     <div class="image">
-                        <img src="assets/img/project3.png" alt="">
+                        <a href="http://jezzicamae.co/escapade-psd/" target="blank">
+                            <img src="assets/img/project3.png" alt="">
+                        </a>
                     </div>
                     <div class="description">
                         <h3>PSD TO HTML</h3>
@@ -163,6 +178,11 @@
                     </div>
                 </div>
                 <div class="container">
+                    <div class="image">
+                        <a href="http://jezzicamae.co/list-my-recipes/" target="blank">
+                            <img src="assets/img/project4.png" alt="">
+                        </a>
+                    </div>
                     <div class="description">
                         <h3>API PROJECT</h3>
                         <p>"List-My-Recipes" is an API Project that helps you get the recipe you want, with the ingredients
@@ -170,14 +190,12 @@
                         <p class="tools">jQuery // JavaScript // API- Ajax</p>
                         <a href="http://jezzicamae.co/list-my-recipes/" role="button"> VIEW LIVE</a>
                     </div>
-                    <div class="image">
-                        <img src="assets/img/project4.png" alt="">
-                    </div>
+
                 </div>
             </div>
         </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="wrapper">
 
             <h2>
@@ -189,16 +207,16 @@
             </p>
             <div class="contact-details">
 
-                <a href="https://twitter.com/jezzicaaaaa">
+                <a href="https://twitter.com/jezzicaaaaa" target="blank">
                     <i class="fa fa-twitter" aria-hidden="true"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/jezzicaaaaa/">
+                <a href="https://www.linkedin.com/in/jezzicaaaaa" target="blank">
                     <i class="fa fa-linkedin" aria-hidden="true"></i>
                 </a>
-                <a href="https://github.com/jezzicaaaaa">
+                <a href="https://github.com/jezzicaaaaa" target="blank">
                     <i class="fa fa-github" aria-hidden="true"></i>
                 </a>
-                <a href="https://instagram.com/jezzicaaaaa">
+                <a href="https://instagram.com/jezzicaaaaa" target="blank">
                     <i class="fa fa-instagram" aria-hidden="true"></i>
                 </a>
             </div>
@@ -211,6 +229,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/a6dab44087.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 

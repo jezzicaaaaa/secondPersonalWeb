@@ -9,6 +9,7 @@ a {
   text-decoration: none;
 }
 h2 {
+  outline: none;
   display: inline-block;
   font-size: 3rem;
   letter-spacing: 5px;
@@ -16,9 +17,16 @@ h2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
+  z-index: 5;
   position: relative;
   clip: auto;
-  text-transform: capitalize;
+  text-transform: uppercase;
+}
+.skill .numbers {
+  color: #333;
+}
+.skill {
+  padding-top: 30px;
 }
 h2:after {
   content: "";
@@ -28,16 +36,32 @@ h2:after {
   display: block;
   color: #fff;
 }
-.numbers {
+h2 #number {
   position: absolute;
-  color: #919191;
-  top: -20px;
-  left: -10;
-  width: 50px;
-  height: 50px;
+  left: -55%;
+  top: -50px;
+  opacity: 0.2;
+  font-size: 8rem;
+  color: #333;
+  -webkit-text-fill-color: #333;
+}
+h2 span {
+  position: absolute;
+  z-index: -1;
+  left: -55%;
+  top: -50px;
+  opacity: 0.1;
+  font-size: 8rem;
+  -webkit-text-fill-color: #fff;
+  color: #fff;
 }
 .skill:after {
-  color: #333333;
+  border-bottom: 2px solid #333;
+  color: #333;
+}
+h2 #port {
+  left: -40%;
+  top: -80%;
 }
 
 .wrapper {
@@ -49,9 +73,39 @@ h2:after {
   .wrapper {
     width: 90%;
   }
+  h2 {
+    padding: 0 30px;
+  }
+
+  h2 span {
+    top: -40%;
+    left: -15%;
+    font-size: 5rem;
+  }
+  h2 #port {
+    left: -12%;
+    top: -40%;
+  }
+  h2 #number {
+    font-size: 5rem;
+    top: 5%;
+    left: -15%;
+  }
 }
 @media (max-width: 768px) {
   .wrapper {
-    width: 95%;
+    width: 98%;
+  }
+  h2 .numbers {
+    font-size: 3rem;
+    top: -50%;
+    left: -5%;
+  }
+  h2 #number {
+    font-size: 3rem;
+  }
+  h2 #port {
+    top: -50%;
+    left: -8%;
   }
 }

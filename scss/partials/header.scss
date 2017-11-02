@@ -186,8 +186,8 @@ header {
       top: 30px;
       right: 0;
       width: 0;
-      ul li {
-        border: 2px solid #fff;
+      ul li a {
+        border: 2px solid #d6ba8d;
         text-align: center;
         background: #303030;
         color: #fff;
@@ -198,7 +198,7 @@ header {
         font-size: 15px;
         letter-spacing: 0.1rem;
       }
-      ul li:hover {
+      ul li a:hover {
         border: 2px solid #d6ba8d;
       }
     }
