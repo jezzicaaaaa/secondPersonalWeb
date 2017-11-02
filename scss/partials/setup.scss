@@ -18,8 +18,28 @@ h2 {
   color: transparent;
   position: relative;
   clip: auto;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
+h2:after {
+  content: "";
+  border-bottom: 2px solid #fff;
+  width: 40%;
+  margin-top: 5px;
+  display: block;
+  color: #fff;
+}
+.numbers {
+  position: absolute;
+  color: #919191;
+  top: -20px;
+  left: -10;
+  width: 50px;
+  height: 50px;
+}
+.skill:after {
+  color: #333333;
+}
+
 .wrapper {
   max-width: 1400px;
   width: 80%;

@@ -1,14 +1,25 @@
 .about {
-    color: #303030;
-    background-color: rgba(183, 217, 216, 1);
-    padding: 60px 0;
-    height: 60vh;
+  color: #b7b7b7;
+  background-color: #272727;
+  padding: 50px 0;
+  height: 60vh;
+  .content {
+    width: 90%;
+  }
+  p {
+    line-height: 3rem;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 963px) {
+  .about {
     .content {
-        width: 80%;
+      p {
+        font-size: 16px;
+        line-height: 2.5rem;
+      }
     }
-    p {
-        line-height: 3rem;
-        font-size: 18px;
-        letter-spacing: 1px;
-    }
+  }
 }

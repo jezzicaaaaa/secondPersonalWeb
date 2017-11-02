@@ -1,5 +1,110 @@
 .portfolio {
-    padding: 50px 0;
-    background-color: #333333;
-    z-index: 2;
+  padding: 50px 0;
+  background-color: #303030;
+  z-index: 2;
+  position: relative;
+  text-align: center;
+  .portfolio-content {
+    margin-top: 50px;
+    .container {
+      padding: 25px;
+      display: flex;
+      margin-bottom: 50px;
+      justify-content: space-around;
+      .image {
+        width: 40%;
+        margin: auto;
+        transition: 0.3s ease-in-out;
+        filter: brightness(50%);
+      }
+      img {
+        width: 100%;
+      }
+      .description {
+        width: 50%;
+        h3 {
+          margin-top: 5px;
+          text-align: center;
+          font-size: 3rem;
+          color: #f3f3f3;
+          letter-spacing: 5px;
+        }
+        p {
+          font-size: 18px;
+          line-height: 2rem;
+          letter-spacing: 2px;
+          color: #b7b7b7;
+        }
+        .tools {
+          text-align: center;
+          color: #d6ba8d;
+          font-style: italic;
+          font-size: 20px;
+          margin-top: 25px;
+          margin-bottom: 30px;
+        }
+        a {
+          color: #303030;
+          letter-spacing: 2px;
+          font-weight: 500;
+          font-size: 18px;
+          padding: 15px 30px;
+          text-align: center;
+          border: 3px solid #d6ba8d;
+          outline: none;
+          background: #d6ba8d;
+        }
+        a:hover {
+          transition: 0.3s ease-in-out;
+          background: transparent;
+          color: #d6ba8d;
+          border: 3px solid #f3f3f3;
+        }
+      }
+    }
+    .container:hover .image {
+      filter: brightness(100%);
+    }
+  }
+}
+@media (max-width: 1280px) {
+  .portfolio {
+    .portfolio-content {
+      .container {
+        .description {
+          h3 {
+            font-size: 2rem;
+          }
+          p {
+            font-size: 16px;
+          }
+          .tools {
+            font-size: 16px;
+          }
+          a {
+            font-size: 16px;
+            padding: 10px 25px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .portfolio {
+    .portfolio-content {
+      .container {
+        display: block;
+        text-align: center;
+        .image {
+          width: 70%;
+        }
+        .description {
+          margin: auto;
+          width: 80%;
+          margin-top: 25px;
+        }
+      }
+    }
+  }
 }
