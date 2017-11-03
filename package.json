@@ -1,0 +1,27 @@
+{
+  "name": "secondpersonalweb",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jezzicaaaaa/secondPersonalWeb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jezzicaaaaa/secondPersonalWeb/issues"
+  },
+  "homepage": "https://github.com/jezzicaaaaa/secondPersonalWeb#readme",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "browser-sync": "^2.18.13",
+    "gulp-babel": "^7.0.0",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "description": ""
+}
