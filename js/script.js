@@ -79,7 +79,7 @@ $(document).ready(function() {
             $('.hamburger-content').width('0');
         } else {
             $(this).addClass('is-active');
-            $('.hamburger-content').width('300px');
+            $('.hamburger-content').width('400px');
         }
         isActive = !isActive;
     });
