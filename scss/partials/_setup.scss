@@ -13,7 +13,7 @@ h2 {
   display: inline-block;
   font-size: 3rem;
   letter-spacing: 5px;
-  background: linear-gradient(to right, #d6ba8d, #ae8658);
+  background: $linearGradient;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
@@ -23,18 +23,18 @@ h2 {
   text-transform: uppercase;
 }
 .skill .numbers {
-  color: #333;
+  color: $accent;
 }
 .skill {
   padding-top: 30px;
 }
 h2:after {
   content: "";
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid $white;
   width: 40%;
   margin-top: 5px;
   display: block;
-  color: #fff;
+  color: $white;
 }
 h2 #number {
   position: absolute;
@@ -42,8 +42,8 @@ h2 #number {
   top: -50px;
   opacity: 0.2;
   font-size: 8rem;
-  color: #333;
-  -webkit-text-fill-color: #333;
+  color: $accent;
+  -webkit-text-fill-color: $accent;
 }
 h2 span {
   position: absolute;
@@ -52,12 +52,12 @@ h2 span {
   top: -50px;
   opacity: 0.1;
   font-size: 8rem;
-  -webkit-text-fill-color: #fff;
-  color: #fff;
+  -webkit-text-fill-color: $white;
+  color: $white;
 }
 .skill:after {
-  border-bottom: 2px solid #333;
-  color: #333;
+  border-bottom: 2px solid $accent;
+  color: $accent;
 }
 h2 #port {
   left: -40%;

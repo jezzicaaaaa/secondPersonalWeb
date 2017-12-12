@@ -1,11 +1,11 @@
 .contact {
   padding-top: 30px;
   text-align: center;
-  background: #272727;
-  color: #b7b7b7;
+  background: $background;
+  color: $textColor;
   p i {
     margin-right: 15px;
-    color: #d6ba8d;
+    color: $primary;
   }
 
   p {
@@ -14,7 +14,7 @@
     margin: 0;
   }
   .email {
-    color: #fff;
+    color: $white;
     font-size: 22px;
     letter-spacing: 2px;
   }
@@ -22,14 +22,14 @@
   .contact-details {
     margin: 50px 0;
     i {
-      color: #d6ba8d;
+      color: $primary;
       margin-right: 2rem;
       font-size: 1.5rem;
     }
   }
   i:hover {
     transition: 0.33s ease-in-out;
-    color: #f3f3f3;
+    color: $textColor;
   }
 }
 @media (max-width: 768px) {
