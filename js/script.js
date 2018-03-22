@@ -52,7 +52,7 @@ $(document).ready(function() {
     sr.reveal("i");
     sr.reveal("figure");
 
-    var thingsIlove = ["my cat", "linux", "nature", "css", "logic"];
+    var thingsIlove = ["my cat", "nature", "css"];
     var indexOfThings = 0;
 
     function iterateList() {
