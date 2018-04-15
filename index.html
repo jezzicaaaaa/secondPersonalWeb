@@ -38,25 +38,25 @@
             </div>
         </div>
     </div>
-    <header>
-        <nav>
-            <img src="assets/img/myLogo.png" alt="my logo">
-            <ul class="main-nav">
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#skill">Skills</a>
-                </li>
-                <li>
-                    <a href="#portfolio">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="wrapper">
+    <div class="skewed-bg">
+        <header>
+            <nav>
+                <img src="assets/img/myLogo.png" alt="my logo">
+                <ul class="main-nav">
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#skill">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
             <div class="header-content">
                 <h1>
                     <span class="hello">Hello.</span>
@@ -71,68 +71,78 @@
                     </span>
                 </h1>
             </div>
-        </div>
-    </header>
-    <section class="about" id="about">
-        <div class="wrapper">
-            <div class="content">
-                <h2>
-                    <span class="numbers">01</span>About</h2>
-                <p class="text">
-                    A computer programming student at George Brown College and a front end developer in Toronto. I love making beautiful websites and I am eager to learn more about
-                    web development. When I'm not coding, you can find me playing computer games, watching Korean TV shows
-                    or playing hide and seek with my pet tiger, I mean cat.
-                </p>
-            </div>
-        </div>
-    </section>
-    <section class="skills" id="skills">
-        <div class="wrapper">
-            <h2 class="skill" id="skill">
-                <span id="number">02</span>Skills</h2>
-            <div class="skill-set">
-                <figure>
-                    <i class="devicon-html5-plain colored"></i>
-                    <figcaption>HTML</figcaption>
-                </figure>
-                <figure>
-                    <i class="devicon-css3-plain colored"></i>
-                    <figcaption>CSS</figcaption>
-                </figure>
-                <figure>
-                    <i class="devicon-javascript-plain colored"></i>
-                    <figcaption>JavaScript</figcaption>
-                </figure>
-                <figure>
-                    <i class="devicon-jquery-plain colored"></i>
-                    <figcaption>jQuery</figcaption>
-                </figure>
-            </div>
-            <div class="skill-set">
-                <figure>
-                    <i class="devicon-github-plain colored"></i>
-                    <figcaption>GitHub</figcaption>
-                </figure>
-                <figure>
-                    <i class="devicon-git-plain colored"></i>
-                    <figcaption>Git</figcaption>
-                </figure>
-                <figure>
-                    <i class="devicon-sass-original colored"></i>
-                    <figcaption>Sass</figcaption>
-                </figure>
-                <figure>
-                    <i class="devicon-gulp-plain colored"></i>
-                    <figcaption>Gulp</figcaption>
-                </figure>
+        </header>
 
+        <section class="about" id="about">
+            <div class="wrapper">
+                <div class="content">
+                    <div class="title">
+                        <span class="numbers">01</span>
+                        <h2>About</h2>
+                    </div>
+                    <p class="text">
+                        A computer programming student at George Brown College and a front end developer in Toronto. I love making beautiful websites
+                        and I am eager to learn more about web development. When I'm not coding, you can find me playing
+                        computer games, watching Korean TV shows or playing hide and seek with my pet tiger, I mean cat.
+                    </p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
+    <div>
+        <section class="skills" id="skills">
+            <div class="wrapper">
+                <div class="title">
+                    <span id="number">02</span>
+                    <h2 class="skill">Skills</h2>
+                </div>
+
+                <div class="skill-set">
+                    <figure>
+                        <i class="devicon-html5-plain colored"></i>
+                        <figcaption>HTML</figcaption>
+                    </figure>
+                    <figure>
+                        <i class="devicon-css3-plain colored"></i>
+                        <figcaption>CSS</figcaption>
+                    </figure>
+                    <figure>
+                        <i class="devicon-javascript-plain colored"></i>
+                        <figcaption>JavaScript</figcaption>
+                    </figure>
+                    <figure>
+                        <i class="devicon-jquery-plain colored"></i>
+                        <figcaption>jQuery</figcaption>
+                    </figure>
+                </div>
+                <div class="skill-set">
+                    <figure>
+                        <i class="devicon-github-plain colored"></i>
+                        <figcaption>GitHub</figcaption>
+                    </figure>
+                    <figure>
+                        <i class="devicon-git-plain colored"></i>
+                        <figcaption>Git</figcaption>
+                    </figure>
+                    <figure>
+                        <i class="devicon-sass-original colored"></i>
+                        <figcaption>Sass</figcaption>
+                    </figure>
+                    <figure>
+                        <i class="devicon-gulp-plain colored"></i>
+                        <figcaption>Gulp</figcaption>
+                    </figure>
+
+                </div>
+            </div>
+        </section>
+    </div>
     <section class="portfolio" id="portfolio">
         <div class="wrapper">
-            <h2>
-                <span class="numbers" id="port">03</span>Portfolio</h2>
+            <div class="title">
+                <span class="numbers">03</span>
+                <h2>Portfolio</h2>
+            </div>
             <div class="portfolio-content">
                 <div class="container">
                     <div class="image">
@@ -197,9 +207,10 @@
     </section>
     <section class="contact" id="contact">
         <div class="wrapper">
-
-            <h2>
-                <span class="numbers">04</span>Contact</h2>
+            <div class="title">
+                <span class="numbers">04</span>
+                <h2>Contact</h2>
+            </div>
             <p class="email">
                 <a href="mailto:jezzicamae@gmail.com" target="contact">
                     <i class="fa fa-envelope-o" aria-hidden="true"></i>
@@ -223,10 +234,6 @@
             <p>&copy; Jezzica Mae Tan 2017</p>
         </div>
     </section>
-
-
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/a6dab44087.js"></script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>

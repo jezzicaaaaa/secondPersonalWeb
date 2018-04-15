@@ -1,8 +1,9 @@
 .about {
   color: $textColor;
-  background-color: $background;
+  height: auto;
   padding: 50px 0;
-  height: 60vh;
+  padding-bottom: 100px;
+  transform: skew(0deg, 10deg);
   .content {
     width: 90%;
   }
@@ -12,7 +13,6 @@
     letter-spacing: 1px;
   }
 }
-
 @media (max-width: 963px) {
   .about {
     .content {
@@ -24,8 +24,7 @@
 }
 @media (max-width: 768px) {
   .about {
-    height: 85vh;
-
+    height: auto;
     .content {
       width: 100%;
       p {

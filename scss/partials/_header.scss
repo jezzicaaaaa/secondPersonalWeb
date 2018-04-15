@@ -5,7 +5,9 @@ header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
     url(../assets/img/flippedimg.jpg);
   background-size: cover;
-  background-position: left;
+  background-position: left; 
+  transform: skew(0deg, 10deg);
+  
   nav {
     padding: 10px 0;
     margin: auto;
@@ -52,17 +54,18 @@ header {
     }
   }
   .header-content {
-    width: auto;
+    width: 100%;
+    padding: 10px 0;
+    margin: auto;
+    max-width: 1660px;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    align-content: center;
     margin-top: 10%;
+
     h1 {
       font-size: 3rem;
       line-height: 4rem;
       letter-spacing: 0.5rem;
-      margin: 0;
       span {
         display: block;
       }
@@ -101,7 +104,6 @@ header {
       }
     }
     .header-content {
-      margin-left: 35%;
       h1 {
         letter-spacing: 0.4rem;
         font-size: 2.5rem;
@@ -160,12 +162,12 @@ header {
 }
 
 .drop-down {
-  width: auto;
   position: fixed;
   top: 30px;
   right: 0;
   transition: 0.3s ease-in-out;
   z-index: 10;
+  
   .container {
     width: 100%;
     padding: 10px;

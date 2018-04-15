@@ -1,4 +1,5 @@
 body {
+  background-color: #fff;
   font-family: "Fira Sans", sans-serif;
   margin: 0;
 }
@@ -22,12 +23,6 @@ h2 {
   clip: auto;
   text-transform: uppercase;
 }
-.skill .numbers {
-  color: $accent;
-}
-.skill {
-  padding-top: 30px;
-}
 h2:after {
   content: "";
   border-bottom: 2px solid $white;
@@ -36,32 +31,56 @@ h2:after {
   display: block;
   color: $white;
 }
-h2 #number {
+.title {
+  width: auto;
+  display: inline-block;
+  padding: 30px 0;
+  position: relative;
+}
+.title span {
   position: absolute;
-  left: -55%;
-  top: -50px;
+  top: -5%;
+  left: -65%;
+  transform: translateX(25%);
+  font-weight: 800;
+  opacity: 0.1;
+  font-size: 8rem;
+  color: $white;
+  -webkit-text-fill-color: $white;
+}
+h2 {
+  margin: 0;
+}
+.skills .title span{
+  position: absolute;
+  top: -5%;
+  left: -70%;
+  transform: translateX(25%);
+  font-weight: 800;
   opacity: 0.2;
   font-size: 8rem;
   color: $accent;
   -webkit-text-fill-color: $accent;
 }
-h2 span {
-  position: absolute;
-  z-index: -1;
-  left: -55%;
-  top: -50px;
-  opacity: 0.1;
-  font-size: 8rem;
-  -webkit-text-fill-color: $white;
-  color: $white;
-}
 .skill:after {
   border-bottom: 2px solid $accent;
   color: $accent;
 }
-h2 #port {
-  left: -40%;
-  top: -80%;
+.portfolio .title span{
+  position: absolute;
+  top: -5%;
+  left: -50%;
+  transform: translateX(25%);
+  font-weight: 800;
+  opacity: 0.1;
+  font-size: 8rem;
+  color: $white;
+  -webkit-text-fill-color: $white;
+}
+.skewed-bg {
+  background-color: $background;
+  transform: skew(0deg, -10deg);
+  z-index: -10;
 }
 
 .wrapper {
@@ -73,39 +92,15 @@ h2 #port {
   .wrapper {
     width: 90%;
   }
-  h2 {
-    padding: 0 30px;
-  }
-
-  h2 span {
-    top: -40%;
-    left: -15%;
-    font-size: 5rem;
-  }
-  h2 #port {
-    left: -12%;
-    top: -40%;
-  }
-  h2 #number {
-    font-size: 5rem;
-    top: 5%;
-    left: -15%;
-  }
 }
-@media (max-width: 768px) {
+
+@media (max-width: 963px) {
   .wrapper {
     width: 95%;
   }
-  h2 .numbers {
-    font-size: 3rem;
-    top: -50%;
-    left: -5%;
-  }
-  h2 #number {
-    font-size: 3rem;
-  }
-  h2 #port {
-    top: -50%;
-    left: -8%;
+  .title span, .portfolio .title span, .skills .title span{
+    top: -40%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
